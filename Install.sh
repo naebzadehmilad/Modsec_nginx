@@ -79,3 +79,4 @@ dependencies
 barone
 init
 
+systemctl enable nginx && systemctl start nginx
