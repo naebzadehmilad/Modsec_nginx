@@ -18,6 +18,9 @@ barone() {
 
 
 checkdir(){
+	
+	echo deb-src http://ir.archive.ubuntu.com/ubuntu focal main restricted >> /etc/apt/sources.list
+	
 	mkdir -p $source_path $modesecurity_path $nginx_connector
 
         if [ -z "$(ls -A $modesecurity_path)" ];  
