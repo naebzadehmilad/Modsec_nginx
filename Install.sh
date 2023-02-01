@@ -74,6 +74,7 @@ init() {
 		mkdir -p "/etc/nginx/modsec/"
 	fi
 	cp $modesecurity_path/modsecurity.conf-recommended /etc/nginx/modsec/main.conf  && nginx -t 
+	cp /opt/nginx_src/mode_security/unicode.mapping /etc/nginx/modsec/
 }
 barone
 checkdir
